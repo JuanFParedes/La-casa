@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#anim{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/paisaje-campo-colorido-hermosa-casa-pueblo-ubicacion-rural-vector-moderno-dibujos-animados_573689-397.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+#anim> *{
+    position: absolute;
+}
+#mensaje{
+    font-size: 2rem;
+    top: 50%;
+    left: 40%;
+    opacity: 0;
+    animation: show-mesage 2s 10s ease-in-out infinite;
+}
+#nube{
+    background: url(images/animated-cloud-removebg-preview.png);
+    z-index: 3; 
+    width: 600px;
+    height: 500px;
+    right: -600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: cloud-entrance 7s 3s ease-in-out;
+    display: flex;
+    justify-content: center;
+
+}
+#lluvia{
+    position: absolute;
+    z-index: 2;
+    background: url(images/61337518-las-gotas-de-agua-patrón-transparente-gotas-de-lluvia-que-caiga-las-gotas-de-agua-que-cae-en-el.jpg);
+    background-size: contain;
+    width: 250px;
+    height: 100vh;
+    opacity: 1;
+    top: 150px;
+    animation: drops 7s 3s ease-in;
+}
+#sol{
+    
+}
